@@ -1,0 +1,93 @@
+/* General Styles */
+.srvs-services {
+    padding: 60px 0;
+    background-color: #eaf2f8;
+}
+
+.srvs-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.srvs-section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: 600;
+}
+
+.srvs-service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.srvs-service-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.srvs-service-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    background-color: #f4f9fc;
+}
+
+.srvs-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 4px solid #00838d;
+}
+
+.srvs-card-title {
+    font-size: 1.8rem;
+    margin: 20px;
+    text-align: center;
+    color: #00838d;
+    font-weight: 600;
+}
+
+.srvs-card-description {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 20px 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.srvs-card-description strong {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Add Responsive Styles */
+@media (max-width: 768px) {
+    .srvs-service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .srvs-service-card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .srvs-section-title {
+        font-size: 2.2rem;
+    }
+
+    .srvs-card-title {
+        font-size: 1.5rem;
+    }
+}

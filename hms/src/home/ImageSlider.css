@@ -1,0 +1,33 @@
+/* ImageSlider.css */
+.image-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-image {
+  width: 100%;
+  height: 500px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  padding: 4px 5px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  background-color: #ccc;
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}

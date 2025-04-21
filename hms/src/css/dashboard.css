@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 240px;
+    /* background: #0a2558; */
+    transition: all 0.5s ease;
+    background: #08265e;
+
+}
+
+.sidebar.collapsed {
+    width: 80px;
+}
+.logoContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    /* background-color: #fff; */
+}
+
+.sidebar .logo-details {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar .logo-details i {
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    min-width: 60px;
+    text-align: center
+}
+
+.sidebar .logo-details .logo_name {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    transition: opacity 0.5s ease;
+}
+
+.sidebar.collapsed .logo-details .logo_name {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .nav-links {
+    margin-top: 10px;
+}
+
+.sidebar .nav-links li {
+    position: relative;
+    list-style: none;
+    height: 50px;
+}
+
+.sidebar .nav-links li button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+.sidebar .nav-links li button.active,
+.sidebar .nav-links li button:hover {
+    background: #081D45;
+}
+
+.sidebar .nav-links li i {
+    min-width: 60px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+.sidebar .nav-links li .links_name {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    transition: opacity 0.5s ease;
+}
+
+.sidebar.collapsed .nav-links li .links_name {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .log_out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.home-section {
+    position: relative;
+    background: #f5f5f5;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left: 240px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.collapsed~.home-section {
+    width: calc(100% - 80px);
+    left: 80px;
+}
+
+.home-section nav {
+    justify-content: space-between;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 240px);
+    left: 240px;
+    z-index: 100;
+    padding: 6px 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+.sidebar.collapsed~.home-section nav {
+    width: calc(100% - 80px);
+    left: 80px;
+}
+
+.home-section nav .sidebar-button {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+}
+.flexHeaderCol{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.smallText{
+    font-size: 11px;
+    color: #414141;
+    padding: 5px 0;
+    width: 15%;
+
+}
+.fullWidth{
+    display: block;
+    width: 80%;
+}
+
+.home-section nav .profile-details {
+    display: flex;
+    align-items: center;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    border-radius: 6px;
+    height: 50px;
+    min-width: 190px;
+    padding: 0 15px 0 2px;
+}
+
+.home-content {
+    position: relative;
+    padding-top: 80px;
+}
+
+
+
+/* not paid */
+
+
+.ntpd-payment-prompt {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 50px 40px;
+    text-align: center;
+    margin: 160px auto;
+    max-width: 700px;
+  }
+  
+
+  .ntpd-heading {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+ 
+  .ntpd-amount-due {
+    font-size: 1.2em;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+
+  .ntpd-pay-button {
+    background-color: #3399cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .ntpd-pay-button:hover {
+    background-color: #287a9e;
+  }
+  
+
+  .ntpd-contact-us {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .ntpd-contact-link {
+    color: #3399cc;
+    text-decoration: none;
+  }
+  
+  .ntpd-contact-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  /* unfreeze account */
+
+  .ntpd-unfreeze-form {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 40px auto;
+  }
+  
+  .ntpd-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .ntpd-form-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .ntpd-form-group input,
+  .ntpd-form-group textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .ntpd-form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .ntpd-submit-button {
+    background-color: #3399cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  .ntpd-submit-button:hover {
+    background-color: #287a9e;
+  }
+  
+  .ntpd-form-message {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: green;
+  }
+  
+  .prf-profile-section {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 60px;
+  }
+  
+  .prf-profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .prf-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px; /* Position dropdown slightly below the image */
+    left: -40px;
+
+    background-color: #ededed;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    border-radius: 5px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .prf-dropdown.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .prf-hospital-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 8px 10px;
+  }
+  .prf-hospital-name:hover{
+    background-color: #3399cc;
+    color: #fff;
+  }
+

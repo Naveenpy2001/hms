@@ -1,0 +1,79 @@
+/* From Uiverse.io by Yaya12085 */
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px 20px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: black
+}
+
+.message {
+    color: #a3a3a3;
+    font-size: 14px;
+    margin-top: 4px;
+    text-align: center
+}
+
+.inputs {
+    margin-top: 10px
+}
+
+.inputs input {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border: none;
+    border-bottom: 1.5px solid #d2d2d2;
+    margin: 0 10px;
+}
+
+.inputs input:focus {
+    border-bottom: 1.5px solid royalblue;
+    outline: none;
+}
+.flexBtns{
+    margin-top: 24px;
+}
+
+.action {
+    padding: 8px 16px;
+    border-radius: 2px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    align-self: end;
+    margin: 0 5px;
+}
+
+/* pop Up */
+
+.PopUp-OTP{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background-color: #0000003e;
+    display: none;
+        align-items: center;
+        justify-content: center;
+}
+.active-otp-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+        top: 0;
+        height: 100%;
+        background-color: #0000003e;
+}

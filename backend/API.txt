@@ -1,0 +1,4 @@
+http://127.0.0.1:8000/api/patients/patients_stats/ [
+    stats of : today,month,year
+]
+

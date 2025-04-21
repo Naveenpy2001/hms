@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  padding: 30px 0;
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.plans-container {
+  display: flex;
+  justify-content: center;
+}
+.plans {
+  border: 1px solid #a7a7a7;
+  padding: 15px;
+  margin: 10px 5px;
+  width: 350px;
+  height: 550px;
+  transition: all 0.2s linear;
+  position: relative;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+.plans:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px 4px #dbdbdb;
+  z-index: 1;
+}
+.col-1 {
+  margin: 15px 0;
+  text-align: center;
+}
+.title,
+.price-strike {
+  margin: 20px 0;
+}
+.title {
+  font-size: 30px;
+  font-weight: 500;
+}
+strike {
+  color: #949494;
+  margin: 0 2px;
+}
+.price {
+  font-weight: 500;
+  font-size: 30px;
+  width: 100%;
+}
+.charge-det {
+  font-size: 12px;
+}
+.save {
+  background-color: #5a005a;
+  padding: 5px 10px;
+  border-radius: 100px;
+  color: #fff;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.ft-title {
+  font-weight: 500;
+  color: #720d72;
+}
+.featrues {
+  margin: 2px 0;
+  transition: all 0.2s linear;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: default;
+}
+.featrues:hover {
+  color: red;
+  transform: scale(1.02);
+}
+.bottom-btn {
+  /* position: absolute; */
+  bottom: 3%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.demo {
+  padding: 7px 50px;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+.demo:hover {
+  background-color: orangered;
+  color: #ffffff;
+}
+.for-more {
+  font-size: 12px;
+  color: #4f4f4f;
+  position: absolute;
+  bottom: 15%;
+  text-align: center;
+  left: 10%;
+}
